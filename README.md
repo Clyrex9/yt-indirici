@@ -1,59 +1,102 @@
 <div align="center">
 
-<img src="ytindirici/assets/icon-256.png" width="96" alt="YT İndirici">
+<img src="ytindirici/assets/icon-256.png" width="110" alt="YT İndirici logo">
 
 # YT İndirici
 
-**YouTube'dan video, müzik ve playlist indirmenin en sade yolu.**
-Reklam yok, limit yok, site yok — linki yapıştır, kaliteyi seç, indir.
+### Download YouTube videos, music and entire playlists — without the sketchy websites.
 
-[![Release](https://img.shields.io/github/v/release/Clyrex9/yt-indirici?label=s%C3%BCr%C3%BCm&color=e0263a)](https://github.com/Clyrex9/yt-indirici/releases/latest)
-[![License: MIT](https://img.shields.io/badge/lisans-MIT-blue)](LICENSE)
-![Python](https://img.shields.io/badge/python-3.10%2B-3776ab)
-![Platform](https://img.shields.io/badge/platform-Windows-0078d4)
+A tiny, open-source desktop app built on [yt-dlp](https://github.com/yt-dlp/yt-dlp).<br>
+Paste a link, pick a quality, hit download. No ads, no pop-ups, no limits, no tracking.
 
-[**⬇ İndir (.exe)**](https://github.com/Clyrex9/yt-indirici/releases/latest) · [English](#english)
+[![Latest release](https://img.shields.io/github/v/release/Clyrex9/yt-indirici?style=flat-square&color=e0263a&label=release)](https://github.com/Clyrex9/yt-indirici/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Clyrex9/yt-indirici/total?style=flat-square&color=e0263a)](https://github.com/Clyrex9/yt-indirici/releases)
+[![Build](https://img.shields.io/github/actions/workflow/status/Clyrex9/yt-indirici/release.yml?style=flat-square&label=build)](https://github.com/Clyrex9/yt-indirici/actions)
+[![License: MIT](https://img.shields.io/badge/license-MIT-2f81f7?style=flat-square)](LICENSE)
+![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4?style=flat-square&logo=windows11&logoColor=white)
+![Python](https://img.shields.io/badge/python-3.10+-3776ab?style=flat-square&logo=python&logoColor=white)
 
-<img src="docs/main-dark-tr.png" width="49%" alt="Koyu tema"> <img src="docs/main-light-tr.png" width="49%" alt="Açık tema">
+<br>
+
+<a href="https://github.com/Clyrex9/yt-indirici/releases/latest/download/YT-Indirici.exe">
+  <img src="https://img.shields.io/badge/⬇%20%20Download%20for%20Windows-e0263a?style=for-the-badge" alt="Download for Windows" height="42">
+</a>
+
+<br><br>
+
+**English** · [Türkçe](README.tr.md)
+
+<br>
+
+<img src="docs/hero-en.png" alt="YT İndirici in light and dark mode" width="100%">
 
 </div>
 
-## Özellikler
+<br>
 
-- 🎬 **Tek video, playlist veya kanal** — linki yapıştırman yeterli
-- ☑️ **Playlist'ten seçerek indir** — 100 videoluk listeden sadece istediklerini işaretle; arama, aralık (`1-10, 15, 20-25`) ve Shift+tık ile toplu seçim
-- 📺 **Kalite seçimi** — 4K, 1440p, 1080p, 720p, 480p, 360p veya en iyisi
-- 🎵 **Sadece ses** — 320 kbps MP3 ya da M4A, kapak resmi ve şarkı bilgileriyle
-- ✅ **Her yerde oynar** — MP4 modunda H.264/AAC tercih edilir; Windows'un kendi oynatıcısında bile açılır
-- 📁 **Düzenli klasörler** — playlist'ler kendi klasörüne `001 - Video Adı.mp4` şeklinde sıralı iner
-- ⏯️ **Kaldığı yerden devam** — aynı playlist'i tekrar indirince inmiş olanları atlar
-- 💬 **Altyazı** — Türkçe/İngilizce altyazıları `.srt` olarak indirir
-- 🌗 **Koyu / açık tema**, 🇹🇷 Türkçe / 🇬🇧 İngilizce arayüz, ayarlar hatırlanır
-- 🔄 **Tek tıkla yt-dlp güncelleme** — YouTube bir şeyleri değiştirdiğinde
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**🎬 Videos, playlists & channels**<br>
+Paste any YouTube link — a single video, a 300-video playlist or a whole channel.
+
+**☑️ Pick exactly what you want**<br>
+Only need 12 videos out of 100? Tick them in a searchable list, type a range like `1-10, 15, 20-25`, or shift-click to select a block.
+
+**📺 Any quality**<br>
+Best available, 4K, 1440p, 1080p, 720p, 480p or 360p.
+
+**🎵 Audio only**<br>
+320 kbps MP3 or M4A — with album art, title and artist embedded.
+
+</td>
+<td width="50%" valign="top">
+
+**✅ Plays everywhere**<br>
+MP4 mode prefers H.264 + AAC, so files open in any player — no "unsupported codec" surprises with AV1.
+
+**📁 Tidy folders**<br>
+Playlists land in their own folder, numbered in order: `Playlist/001 - Title.mp4`.
+
+**⏯️ Resume-friendly**<br>
+Re-run a playlist and already-downloaded videos are skipped.
+
+**🌗 Polished UI**<br>
+Native Windows 11 look, dark & light themes, English & Turkish, remembers your settings, one-click yt-dlp updates.
+
+</td>
+</tr>
+</table>
 
 <div align="center">
-<img src="docs/picker-dark-tr.png" width="80%" alt="Playlist'ten video seçme">
+<img src="docs/picker-en.png" alt="Selecting videos from a playlist" width="85%">
+<br>
+<sub>Selecting 10 of 40 videos — with search, ranges and a running total of the length.</sub>
 </div>
 
-## Kurulum
+## 🚀 Getting started
 
-### Seçenek 1 — Hazır .exe (en kolayı)
+### Option 1 — Download the app (recommended)
 
-1. [Releases](https://github.com/Clyrex9/yt-indirici/releases/latest) sayfasından `YT-Indirici.exe` dosyasını indir ve çalıştır.
-2. Yüksek kalite ve MP3 için **ffmpeg** gerekli (bir kere kurman yeterli):
+1. Download **[YT-Indirici.exe](https://github.com/Clyrex9/yt-indirici/releases/latest/download/YT-Indirici.exe)** and run it. No installation needed.
+2. Install **ffmpeg** once — it's needed to merge high-quality video with audio and to convert to MP3:
    ```powershell
    winget install Gyan.FFmpeg
    ```
-3. YouTube artık bazı formatlar için bir JavaScript motoru istiyor. [Node.js](https://nodejs.org) kuruluysa onu kullanır, yoksa:
+3. YouTube now requires a **JavaScript runtime** for some formats. If you already have [Node.js](https://nodejs.org), you're set. Otherwise:
    ```powershell
    winget install DenoLand.Deno
    ```
 
-> Windows SmartScreen "tanınmayan uygulama" uyarısı verebilir — imzasız açık kaynak uygulamalarda normaldir. *Ek bilgi → Yine de çalıştır.*
+> [!NOTE]
+> Windows SmartScreen may warn about an "unrecognized app" because the executable isn't code-signed. Click **More info → Run anyway**. Don't trust it? The [build](.github/workflows/release.yml) runs publicly on GitHub Actions — or run it from source.
 
-### Seçenek 2 — Kaynak koddan
+### Option 2 — Run from source
 
-[Python 3.10+](https://www.python.org/downloads/) gerekli.
+Requires [Python 3.10+](https://www.python.org/downloads/).
 
 ```bash
 git clone https://github.com/Clyrex9/yt-indirici.git
@@ -62,86 +105,110 @@ pip install -r requirements.txt
 python -m ytindirici
 ```
 
-Konsol penceresi olmadan açmak için `run.pyw` dosyasına çift tıklayabilirsin.
+On Windows you can also double-click `run.pyw` to start it without a console window.
 
-## Kullanım
+## 📖 How to use
 
-1. Video, playlist veya kanal linkini yapıştır.
-2. Kaliteyi ve klasörü seç.
-3. Playlist'in sadece bir kısmını istiyorsan **Videoları seç…** ile işaretle.
-4. **İndir**'e bas.
+1. **Paste** a video, playlist or channel link.
+2. **Choose** a quality and a download folder.
+3. *(Optional)* Click **Select videos…** to download only part of a playlist.
+4. Hit **Download**.
 
-İpucu: Link kutusuna `ytsearch20:aranacak şey` yazıp **Videoları seç…** dersen YouTube aramasındaki ilk 20 sonuçtan seçebilirsin.
+> [!TIP]
+> Type `ytsearch20:lofi beats` into the link box and click **Select videos…** to pick from the top 20 YouTube search results.
 
-## Sık karşılaşılan sorunlar
+## 🆚 Why not just use a website?
 
-| Sorun | Çözüm |
-|---|---|
-| İndirmeler birden hata vermeye başladı | Alttaki **yt-dlp'yi güncelle**'ye tıkla (exe sürümünde yeni sürümü indir). |
-| Sadece düşük kalite iniyor / ses ve görüntü ayrı | ffmpeg kurulu değil: `winget install Gyan.FFmpeg` |
-| "No supported JavaScript runtime" | Node.js veya Deno kur (yukarıya bak). |
-| Yaş sınırlı / üyelere özel videolar inmiyor | Bunlar giriş gerektirir, şu an desteklenmiyor. |
+| | YT İndirici | Typical downloader sites |
+|---|:---:|:---:|
+| Ads, pop-ups, fake "Download" buttons | ❌ None | 😩 Everywhere |
+| Whole playlists & channels | ✅ | Rarely |
+| Pick specific videos from a playlist | ✅ | ❌ |
+| 1080p / 4K with audio | ✅ | Often limited or paid |
+| MP3 with cover art & tags | ✅ | Sometimes |
+| Length or count limits | ❌ None | Usually |
+| Open source | ✅ | ❌ |
 
-## Geliştirme
+## ❓ FAQ
+
+<details>
+<summary><b>Downloads suddenly started failing</b></summary>
+<br>
+YouTube changes things regularly and yt-dlp catches up within days. Click <b>Update yt-dlp</b> at the bottom of the window. If you use the <code>.exe</code>, download the newest release instead.
+</details>
+
+<details>
+<summary><b>I only get low quality, or video and audio come out as separate files</b></summary>
+<br>
+ffmpeg isn't installed or isn't on your PATH. Run <code>winget install Gyan.FFmpeg</code> and restart the app.
+</details>
+
+<details>
+<summary><b>"No supported JavaScript runtime could be found"</b></summary>
+<br>
+Install <a href="https://nodejs.org">Node.js</a> or Deno (<code>winget install DenoLand.Deno</code>). YouTube requires one to unlock most formats.
+</details>
+
+<details>
+<summary><b>Age-restricted or members-only videos don't download</b></summary>
+<br>
+Those require being signed in, which isn't supported yet.
+</details>
+
+<details>
+<summary><b>Where are my settings stored?</b></summary>
+<br>
+In <code>%APPDATA%\YT-Indirici\settings.json</code>. Delete it to reset everything.
+</details>
+
+<details>
+<summary><b>What does "İndirici" mean?</b></summary>
+<br>
+It's Turkish for <i>downloader</i>. Pronounced roughly "in-dee-ree-jee".
+</details>
+
+## 🛠️ Development
 
 ```bash
 pip install -r requirements.txt
 python -m unittest discover -s tests
 ```
 
-Proje yapısı:
-
 ```
 ytindirici/
-├── app.py          # ana pencere (tkinter + sv-ttk)
-├── picker.py       # playlist video seçme penceresi
-├── downloader.py   # yt-dlp sarmalayıcı: ayarlar, listeleme, indirme
-├── i18n.py         # arayüz metinleri (TR / EN)
-├── settings.py     # ayarların kaydı (%APPDATA%\YT-Indirici)
+├── app.py          # main window (tkinter + sv-ttk)
+├── picker.py       # playlist video picker
+├── downloader.py   # yt-dlp wrapper: options, listing, downloading
+├── i18n.py         # UI strings (English / Turkish)
+├── settings.py     # persisted preferences
 └── utils.py
 ```
 
-`v*` etiketi push'landığında GitHub Actions Windows `.exe` dosyasını derleyip Releases'a ekler.
+Pushing a `v*` tag builds the Windows `.exe` on GitHub Actions and attaches it to a new release.
 
-Katkılar memnuniyetle karşılanır — issue açabilir ya da pull request gönderebilirsin. Yeni bir dil eklemek için `i18n.py`'a bir sözlük eklemen yeterli.
+## 🤝 Contributing
 
-## Sorumluluk reddi
+Issues and pull requests are welcome! A few easy ways to help:
 
-Bu araç kişisel kullanım içindir. İndirdiğin içeriklerin telif haklarına ve [YouTube Hizmet Şartları](https://www.youtube.com/t/terms)'na uymak senin sorumluluğundadır. Hakkı sende olmayan içerikleri yeniden yayınlama.
+- 🌍 **Add a translation** — copy the `"en"` block in [`i18n.py`](ytindirici/i18n.py), translate it, and add your language to `LANGUAGES`.
+- 🐛 **Report a bug** — include the link (if public) and the error from the log panel.
+- 💡 **Suggest a feature** — open an issue.
 
-## Teşekkürler
+## ⚖️ Disclaimer
 
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) — tüm ağır işi yapan motor
-- [Sun Valley ttk theme](https://github.com/rdbende/Sun-Valley-ttk-theme) — Windows 11 görünümü
-- [FFmpeg](https://ffmpeg.org) — birleştirme ve dönüştürme
+This tool is intended for personal use, such as saving videos you have the right to download for offline viewing. You are responsible for complying with copyright law and [YouTube's Terms of Service](https://www.youtube.com/t/terms). Please don't redistribute content you don't own.
 
----
+## 💙 Built with
 
-<a name="english"></a>
+[yt-dlp](https://github.com/yt-dlp/yt-dlp) — the engine doing all the heavy lifting ·
+[Sun Valley ttk theme](https://github.com/rdbende/Sun-Valley-ttk-theme) — the Windows 11 look ·
+[FFmpeg](https://ffmpeg.org) — merging & converting
 
-## English
+## 📄 License
 
-**YT İndirici** ("YT Downloader") is a clean desktop app for downloading YouTube videos, music and playlists — no ads, no limits, no sketchy websites. The UI is available in English and Turkish.
+[MIT](LICENSE) © Clyrex
 
 <div align="center">
-<img src="docs/main-dark-en.png" width="49%" alt="Main window"> <img src="docs/picker-dark-en.png" width="49%" alt="Select videos from a playlist">
+<br>
+<sub>If this saved you from one more ad-infested website, consider giving it a ⭐</sub>
 </div>
-
-**Features:** single videos, playlists and channels · pick exactly which playlist videos to download (search, ranges like `1-10, 15`, shift+click) · 4K to 360p or best · MP3 (320 kbps) / M4A with cover art and tags · MP4 mode prefers H.264/AAC so files play everywhere · playlists saved to their own folder as `001 - Title.mp4` · skips already-downloaded files · TR/EN subtitles · dark/light theme · one-click yt-dlp update.
-
-**Install:** grab `YT-Indirici.exe` from [Releases](https://github.com/Clyrex9/yt-indirici/releases/latest), or run from source:
-
-```bash
-git clone https://github.com/Clyrex9/yt-indirici.git
-cd yt-indirici
-pip install -r requirements.txt
-python -m ytindirici
-```
-
-You'll also want **ffmpeg** (`winget install Gyan.FFmpeg`) for high quality and MP3, and a JavaScript runtime — [Node.js](https://nodejs.org) or Deno (`winget install DenoLand.Deno`) — which YouTube now needs for some formats.
-
-**Disclaimer:** for personal use. Respect copyright and YouTube's Terms of Service.
-
-## Lisans / License
-
-[MIT](LICENSE)
