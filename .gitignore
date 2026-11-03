@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+*.spec
+.vscode/
+.idea/
+
+# downloaded media
+*.mp4
+*.mkv
+*.webm
+*.mp3
+*.m4a
+*.part

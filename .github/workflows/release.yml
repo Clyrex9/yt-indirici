@@ -1,0 +1,47 @@
+name: Build & release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt pyinstaller
+
+      - name: Run tests
+        run: python -m unittest discover -s tests
+
+      - name: Build exe
+        run: >
+          pyinstaller --noconfirm --onefile --windowed
+          --name YT-Indirici
+          --icon ytindirici/assets/icon.ico
+          --add-data "ytindirici/assets;ytindirici/assets"
+          --collect-data sv_ttk
+          --collect-data yt_dlp_ejs
+          run.pyw
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: YT-Indirici
+          path: dist/YT-Indirici.exe
+
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/YT-Indirici.exe
+          generate_release_notes: true
